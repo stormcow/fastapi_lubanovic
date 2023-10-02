@@ -13,6 +13,9 @@ app.include_router(user.router)
 def top() -> str:
     return "top here"
 
+@app.get('/hello')
+def hello()->str:
+    return 'hello'
 @app.get('/echo/{thing}')
 def echo(thing:str) -> str:
     return f"echoing {thing}"

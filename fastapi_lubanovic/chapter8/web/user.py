@@ -10,6 +10,7 @@ else:
     from service import user as service
 from errors import Missing, Duplicate
 
+from fake import user as service
 ACCESS_TOKEN_EXPIRE_MINUTE = 15
 router = APIRouter(prefix="/user", tags=["user"])
 

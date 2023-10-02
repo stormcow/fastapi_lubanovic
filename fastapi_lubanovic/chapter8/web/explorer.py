@@ -39,8 +39,8 @@ def modify(explorer: Explorer) -> Explorer:
 
 
 @router.put("/")
-def replace(explorer: Explorer) -> Explorer:
-    return service.replace(explorer)
+def replace(name:str,explorer: Explorer) -> Explorer:
+    return service.replace(name,explorer)
 
 
 @router.delete("/{name}", status_code=204)
